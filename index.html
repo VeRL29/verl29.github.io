@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Delien Technologies PNG — Specialist IT services including virtual machine subnetting, IP address management, website building, and server and network administration.">
+  <title>Delien Technologies — IT Solutions PNG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     TOP BAR
+═══════════════════════════════════════════════ -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span>📍 Port Moresby, PNG</span>
+      <span>(+675) 321 0000</span>
+    </div>
+    <div class="topbar-right">
+      <a href="mailto:hello@delien.com.pg">hello@delien.com.pg</a>
+      <a href="#" onclick="navigate('contact'); return false;" class="topbar-cta">Get a Quote</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+
+    <!-- LEFT: Logo -->
+    <a class="logo" href="#" onclick="navigate('home'); return false;">
+      <div class="logo-mark">
+        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3"  y="3"  width="9" height="9" rx="1.5" stroke="#e8630a" stroke-width="1.8"/>
+          <rect x="16" y="3"  width="9" height="9" rx="1.5" stroke="#ff8534" stroke-width="1.8"/>
+          <rect x="3"  y="16" width="9" height="9" rx="1.5" stroke="#ff8534" stroke-width="1.8"/>
+          <rect x="16" y="16" width="9" height="9" rx="1.5" stroke="#e8630a" stroke-width="1.8"/>
+          <line x1="12"  y1="7.5"  x2="16"  y2="7.5"  stroke="#ffffff" stroke-width="1.5"/>
+          <line x1="12"  y1="20.5" x2="16"  y2="20.5" stroke="#ffffff" stroke-width="1.5"/>
+          <line x1="7.5" y1="12"   x2="7.5" y2="16"   stroke="#ffffff" stroke-width="1.5"/>
+          <line x1="20.5" y1="12"  x2="20.5" y2="16"  stroke="#ffffff" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div>
+        <span class="logo-name">Delien</span>
+        <span class="logo-tag">Technologies PNG</span>
+      </div>
+    </a>
+
+    <!-- CENTRE: Nav links -->
+    <ul class="nav-links">
+      <li><a href="#" id="nav-home"     class="active" onclick="navigate('home');     return false;">Home</a></li>
+      <li><a href="#" id="nav-about"               onclick="navigate('about');    return false;">About</a></li>
+      <li><a href="#" id="nav-services"             onclick="navigate('services'); return false;">Services</a></li>
+      <li><a href="#" id="nav-media"                onclick="navigate('media');    return false;">Media</a></li>
+      <li><a href="#" id="nav-contact"              onclick="navigate('contact');  return false;">Contact</a></li>
+    </ul>
+
+    <!-- RIGHT: Social icons + hamburger -->
+    <div class="nav-right">
+      <a class="nav-social linkedin" href="https://linkedin.com/company/delien-technologies" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a class="nav-social whatsapp" href="https://wa.me/67532100000" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.11 1.523 5.836L.057 23.215a.75.75 0 00.92.92l5.379-1.466A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.944 9.944 0 01-5.073-1.388l-.361-.215-3.735 1.018 1.018-3.735-.215-.361A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+        </svg>
+      </a>
+      <button class="hamburger" onclick="toggleMobile()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#" onclick="navigate('home');     return false;">Home</a>
+    <a href="#" onclick="navigate('about');    return false;">About</a>
+    <a href="#" onclick="navigate('services'); return false;">Services</a>
+    <a href="#" onclick="navigate('media');    return false;">Media</a>
+    <a href="#" onclick="navigate('contact');  return false;">Contact</a>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE: HOME
+═══════════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO with rotating background images -->
+  <div class="hero">
+    <div class="hero-slides">
+      <!-- Place your own photos in /images/ and update the filenames below -->
+      <div class="hero-slide active" style="background-image: url('images/hero-1.jpg')"></div>
+      <div class="hero-slide"        style="background-image: url('images/hero-2.jpg')"></div>
+      <div class="hero-slide"        style="background-image: url('images/hero-3.jpg')"></div>
+      <div class="hero-slide"        style="background-image: url('images/hero-4.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-inner">
+      <div>
+        <div class="hero-label">// Papua New Guinea IT Solutions</div>
+        <h1>Your Network.<br><span>Our Expertise.</span></h1>
+        <p>From virtual machine subnetting to full server and network administration — Delien designs, builds, and manages the infrastructure that keeps your business running.</p>
+        <div class="hero-btns">
+          <a href="#" class="btn-primary" onclick="navigate('services'); return false;">Our Services</a>
+          <a href="#" class="btn-ghost"   onclick="navigate('about');    return false;">About Us</a>
+        </div>
+      </div>
+
+      <!-- Terminal block (right side, hidden on mobile) -->
+      <div class="hero-visual">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+            <span class="tbar-lbl">delien@core-vm-01 ~ %</span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="t-prompt">$ </span><span class="t-cmd">virsh list --all</span></div>
+            <div class="t-out">&nbsp;1&nbsp; web-prod-01&nbsp; <span class="t-ok">running</span></div>
+            <div class="t-out">&nbsp;2&nbsp; db-master&nbsp;&nbsp;&nbsp; <span class="t-ok">running</span></div>
+            <div class="t-out">&nbsp;3&nbsp; dev-sandbox&nbsp; <span class="t-ok">running</span></div>
+            <div style="margin-top:.5rem"><span class="t-prompt">$ </span><span class="t-cmd">ip route show</span></div>
+            <div class="t-out">10.0.10.0/24 dev vlan10</div>
+            <div class="t-out">10.0.20.0/24 dev vlan20</div>
+            <div class="t-out">10.0.99.0/28 dev vlan99</div>
+            <div style="margin-top:.5rem" class="t-ok">└─ All interfaces UP ✓</div>
+            <div class="t-comment"># All systems nominal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide dots -->
+    <div class="hero-dots">
+      <button class="hero-dot active" onclick="goSlide(0)" aria-label="Slide 1"></button>
+      <button class="hero-dot"        onclick="goSlide(1)" aria-label="Slide 2"></button>
+      <button class="hero-dot"        onclick="goSlide(2)" aria-label="Slide 3"></button>
+      <button class="hero-dot"        onclick="goSlide(3)" aria-label="Slide 4"></button>
+    </div>
+  </div>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="services-bg">
+    <div class="container">
+      <div class="sec-label">// What We Do</div>
+      <h2 class="sec-title">Core Services</h2>
+      <div class="rule"></div>
+      <p class="sec-desc">Specialist IT services built for businesses and organisations across Papua New Guinea.</p>
+      <div class="svc-grid">
+
+        <div class="svc-card">
+          <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" rx="1"/><rect x="13" y="2" width="9" height="9" rx="1"/><rect x="2" y="13" width="9" height="9" rx="1"/><rect x="13" y="13" width="9" height="9" rx="1"/></svg></div>
+          <h3>Virtual Machine & Subnetting</h3>
+          <p>Segmented VM environments with precise subnet planning, VLAN configuration, and inter-VM routing.</p>
+          <div class="svc-tags"><span class="tag">KVM/VMware</span><span class="tag">VLAN</span><span class="tag">Proxmox</span></div>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4.03 3-9 3S3 13.66 3 12"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg></div>
+          <h3>IP Address Management</h3>
+          <p>Full IPAM deployment — track, allocate, and audit every IP with automated DHCP and DNS integration.</p>
+          <div class="svc-tags"><span class="tag">PHPIPAM</span><span class="tag">NetBox</span><span class="tag">DNS</span></div>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <h3>Website Building</h3>
+          <p>Custom-coded and WordPress websites with hosting setup, Cloudflare CDN, and ongoing maintenance.</p>
+          <div class="svc-tags"><span class="tag">WordPress</span><span class="tag">Cloudflare</span><span class="tag">SSL</span></div>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="1"/><rect x="2" y="14" width="20" height="8" rx="1"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+          <h3>Server Administration</h3>
+          <p>Windows Server and Linux management — Active Directory, Group Policy, patch management, monitoring.</p>
+          <div class="svc-tags"><span class="tag">Windows Server</span><span class="tag">Linux</span><span class="tag">AD/GPO</span></div>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <h3>Network Administration</h3>
+          <p>Switch and router configuration, firewall rules, VPN setup, and monitoring for Cisco platforms.</p>
+          <div class="svc-tags"><span class="tag">Cisco</span><span class="tag">Firewall</span><span class="tag">VPN</span></div>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>IT Security & Hardening</h3>
+          <p>Server hardening, malware response, log auditing, and network security assessments.</p>
+          <div class="svc-tags"><span class="tag">Hardening</span><span class="tag">Audit</span><span class="tag">Response</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <div class="stats-band">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item"><div class="stat-num">50<em>+</em></div><div class="stat-lbl">Clients Served</div></div>
+        <div class="stat-item"><div class="stat-num">99<em>%</em></div><div class="stat-lbl">Uptime Delivered</div></div>
+        <div class="stat-item"><div class="stat-num">200<em>+</em></div><div class="stat-lbl">VMs Deployed</div></div>
+        <div class="stat-item"><div class="stat-num">5<em>yr</em></div><div class="stat-lbl">In PNG Tech</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT STRIP -->
+  <section style="background: var(--white);">
+    <div class="container">
+      <div class="about-split">
+        <div class="about-visual">
+          <div class="terminal-bar" style="margin: -2rem -2rem 1rem; border-radius: 8px 8px 0 0;">
+            <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+            <span class="tbar-lbl">network-topology.sh</span>
+          </div>
+          <div class="terminal-body" style="padding: 0;">
+            <div class="t-comment"># Delien Lab — Active Topology</div>
+            <div style="margin-top:.5rem"><span class="t-out">┌─ Core Switch (10.0.0.1)</span></div>
+            <div><span class="t-out">│&nbsp; ├─ VLAN 10 — Servers&nbsp;&nbsp; 10.0.10.0/24</span></div>
+            <div><span class="t-out">│&nbsp; ├─ VLAN 20 — Users&nbsp;&nbsp;&nbsp;&nbsp; 10.0.20.0/24</span></div>
+            <div><span class="t-out">│&nbsp; ├─ VLAN 30 — VoIP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.0.30.0/24</span></div>
+            <div><span class="t-out">│&nbsp; └─ VLAN 99 — Mgmt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.0.99.0/28</span></div>
+            <div style="margin-top:.5rem"><span class="t-out">├─ VM Host 1&nbsp; (10.0.10.10)</span></div>
+            <div><span class="t-out">│&nbsp; ├─ web-prod&nbsp; 10.0.10.20</span></div>
+            <div><span class="t-out">│&nbsp; └─ db-prod&nbsp;&nbsp; 10.0.10.21</span></div>
+            <div style="margin-top:.5rem"><span class="t-ok">└─ All interfaces UP ✓</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="sec-label">// Who We Are</div>
+          <h2 class="sec-title">PNG-Based. Technically Grounded.</h2>
+          <div class="rule"></div>
+          <p>Delien Technologies is a Papua New Guinea IT company founded by practitioners — people who have hands-on experience managing infrastructure for broadcasters, enterprises, and government organisations across the country.</p>
+          <p>We don't outsource expertise. Every project is handled in-house by certified engineers who understand the unique challenges of working in PNG's environment.</p>
+          <ul class="check-list">
+            <li>Certified network and server engineers on the ground in PNG</li>
+            <li>End-to-end project delivery — design, deploy, support</li>
+            <li>On-site and remote support across NCD and provinces</li>
+            <li>Transparent pricing with no hidden costs</li>
+          </ul>
+          <a href="#" class="btn-primary" style="margin-top: 2rem;" onclick="navigate('about'); return false;">More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter">
+    <div class="container">
+      <div class="nl-inner">
+        <div>
+          <h3>Stay in the Loop</h3>
+          <p>Tech tips, service updates, and PNG IT news — delivered to your inbox.</p>
+        </div>
+        <div class="nl-form">
+          <input class="nl-input" type="email" placeholder="your@email.com" aria-label="Email address">
+          <button class="nl-btn" onclick="alert('Thanks for subscribing!')">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page-home -->
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE: ABOUT
+═══════════════════════════════════════════════ -->
+<div class="page" id="page-about">
+
+  <div class="page-hero">
+    <div class="page-hero-grid"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="breadcrumb">
+        <a href="#" onclick="navigate('home'); return false;">Home</a>
+        <span>›</span>
+        <span>About</span>
+      </div>
+      <div class="sec-label">// Our Story</div>
+      <h1>Built by Engineers,<br>For PNG Business</h1>
+      <p>We started Delien because we saw a gap — organisations across PNG struggling with infrastructure problems that the right expertise could solve.</p>
+    </div>
+  </div>
+
+  <section style="background: var(--white);">
+    <div class="container">
+      <div class="about-split">
+        <div class="about-text">
+          <div class="sec-label">// Background</div>
+          <h2 class="sec-title">Grounded in Real-World IT</h2>
+          <div class="rule"></div>
+          <p>Delien grew out of years of hands-on experience managing servers, networks, and broadcast infrastructure across Papua New Guinea's public and private sectors. Our founders come from environments where uptime isn't optional and troubleshooting needs to happen fast.</p>
+          <p>We understand PNG's unique infrastructure constraints — unreliable power, limited connectivity in provinces, and a shortage of local IT expertise. We design solutions that work within those realities, not around them.</p>
+          <p>Whether you need a single subnet planned, a fleet of VMs deployed, or your entire office network rebuilt — we deliver with precision and keep things simple enough for your team to manage long-term.</p>
+        </div>
+        <div class="about-visual">
+          <div class="terminal-bar" style="margin: -2rem -2rem 1rem; border-radius: 8px 8px 0 0;">
+            <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+            <span class="tbar-lbl">about-delien.txt</span>
+          </div>
+          <div class="terminal-body" style="padding: 0;">
+            <div class="t-comment"># Company Profile</div>
+            <div style="margin-top:.5rem"><span class="t-out">Name&nbsp;&nbsp;&nbsp; </span><span class="t-cmd">: Delien Technologies PNG</span></div>
+            <div><span class="t-out">Founded </span><span class="t-cmd">: 2020, Port Moresby</span></div>
+            <div><span class="t-out">Focus&nbsp;&nbsp; </span><span class="t-cmd">: Infrastructure & Networking</span></div>
+            <div style="margin-top:.75rem" class="t-comment"># Specialisations</div>
+            <div class="t-ok">✓ VM Deployment & Subnetting</div>
+            <div class="t-ok">✓ IP Address Management (IPAM)</div>
+            <div class="t-ok">✓ Server & Network Administration</div>
+            <div class="t-ok">✓ Website Development & Hosting</div>
+            <div class="t-ok">✓ IT Security Hardening</div>
+            <div style="margin-top:.75rem" class="t-comment"># Certifications</div>
+            <div class="t-out">CCNA · CompTIA Network+ · MCSA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: var(--light);">
+    <div class="container">
+      <div class="sec-label">// Our Principles</div>
+      <h2 class="sec-title">How We Work</h2>
+      <div class="rule"></div>
+      <div class="values-grid">
+        <div class="val-card"><div class="val-num">01 //</div><h3>Keep It Documented</h3><p>Every network we build, every VM we deploy — full documentation your team can use long after we leave.</p></div>
+        <div class="val-card"><div class="val-num">02 //</div><h3>Design for PNG</h3><p>Solutions sized and hardened for local power, connectivity, and resource realities — not a textbook network.</p></div>
+        <div class="val-card"><div class="val-num">03 //</div><h3>No Vendor Lock-In</h3><p>Open standards wherever possible. We avoid solutions that tie your organisation to a single proprietary platform.</p></div>
+        <div class="val-card"><div class="val-num">04 //</div><h3>Honest Pricing</h3><p>Quoted in kina, scoped clearly, no surprises. We tell you what things cost and why before any work begins.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: var(--white);">
+    <div class="container">
+      <div class="sec-label">// The Team</div>
+      <h2 class="sec-title">People Behind Delien</h2>
+      <div class="rule"></div>
+      <div class="team-grid">
+        <div class="team-card">
+          <!-- Replace with: <img src="images/team-delien.jpg" alt="Delien W." style="width:90px;height:90px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block;"> -->
+          <div class="team-av">DW</div>
+          <h3>Delien W.</h3>
+          <div class="team-role">// Lead Engineer</div>
+        </div>
+        <div class="team-card">
+          <div class="team-av">AK</div>
+          <h3>Andrew K.</h3>
+          <div class="team-role">// Network Specialist</div>
+        </div>
+        <div class="team-card">
+          <div class="team-av">SM</div>
+          <h3>Sarah M.</h3>
+          <div class="team-role">// Web Developer</div>
+        </div>
+        <div class="team-card">
+          <div class="team-av">JP</div>
+          <h3>Joel P.</h3>
+          <div class="team-role">// Systems Administrator</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="container">
+      <div class="cta-inner">
+        <div>
+          <h2>Ready to Get Started?</h2>
+          <p>Tell us about your infrastructure and we'll put together a scoped quote.</p>
+        </div>
+        <a href="#" class="btn-white" onclick="navigate('services'); return false;">View Our Services</a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page-about -->
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE: SERVICES
+═══════════════════════════════════════════════ -->
+<div class="page" id="page-services">
+
+  <div class="page-hero">
+    <div class="page-hero-grid"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="breadcrumb">
+        <a href="#" onclick="navigate('home'); return false;">Home</a>
+        <span>›</span>
+        <span>Services</span>
+      </div>
+      <div class="sec-label">// What We Offer</div>
+      <h1>Services & Solutions</h1>
+      <p>Specialist IT services for businesses, government, and institutions across Papua New Guinea.</p>
+    </div>
+  </div>
+
+  <section style="background: var(--white);">
+    <div class="container">
+      <div class="full-svc-grid">
+
+        <div class="full-svc">
+          <div class="full-svc-head">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" rx="1"/><rect x="13" y="2" width="9" height="9" rx="1"/><rect x="2" y="13" width="9" height="9" rx="1"/><rect x="13" y="13" width="9" height="9" rx="1"/></svg>
+            <div><h3>Virtual Machine & Subnetting</h3><p>Full VM environment design — from hypervisor setup to segmented subnets and inter-VLAN routing</p></div>
+          </div>
+          <div class="full-svc-body">
+            <ul class="feat-list">
+              <li>Hypervisor installation (KVM, VMware ESXi, Proxmox)</li>
+              <li>Subnet planning and IP scheme design</li>
+              <li>VLAN segmentation and trunk configuration</li>
+              <li>Inter-VM routing and firewall rules</li>
+              <li>VM snapshot, backup, and live migration</li>
+              <li>Resource allocation and performance tuning</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="full-svc">
+          <div class="full-svc-head">
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4.03 3-9 3S3 13.66 3 12"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg>
+            <div><h3>IP Address Management (IPAM)</h3><p>Deploy, organise, and audit every IP across your network — no more spreadsheets</p></div>
+          </div>
+          <div class="full-svc-body">
+            <ul class="feat-list">
+              <li>PHPIPAM or NetBox deployment and configuration</li>
+              <li>IP allocation policies and documentation</li>
+              <li>DHCP scope management and reservation</li>
+              <li>DNS forward/reverse zone integration</li>
+              <li>IP audit and conflict detection</li>
+              <li>Staff training and handover documentation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="full-svc">
+          <div class="full-svc-head">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <div><h3>Website Building & Hosting</h3><p>Professional websites with full setup — domain, hosting, CDN, and ongoing care</p></div>
+          </div>
+          <div class="full-svc-body">
+            <ul class="feat-list">
+              <li>Custom-coded HTML / CSS / JavaScript websites</li>
+              <li>WordPress setup, theming, and plugins</li>
+              <li>GoDaddy / cPanel hosting configuration</li>
+              <li>Cloudflare DNS, CDN, and WAF setup</li>
+              <li>SSL certificate installation and renewal</li>
+              <li>Monthly maintenance, backups, and updates</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="full-svc">
+          <div class="full-svc-head">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="1"/><rect x="2" y="14" width="20" height="8" rx="1"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            <div><h3>Server Administration</h3><p>Windows Server and Linux — from initial setup to day-to-day management and hardening</p></div>
+          </div>
+          <div class="full-svc-body">
+            <ul class="feat-list">
+              <li>Windows Server 2016 / 2019 / 2022 setup</li>
+              <li>Active Directory, DNS, DHCP, and Group Policy</li>
+              <li>Linux server deployment and hardening (Ubuntu/RHEL)</li>
+              <li>Patch management and update scheduling</li>
+              <li>Remote monitoring and alerting setup</li>
+              <li>Backup and disaster recovery planning</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="full-svc">
+          <div class="full-svc-head">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div><h3>Network Administration</h3><p>Design, configure, and maintain your LAN/WAN — routers, switches, firewalls, and VPNs</p></div>
+          </div>
+          <div class="full-svc-body">
+            <ul class="feat-list">
+              <li>Cisco switch and router configuration</li>
+              <li>Firewall rule design and regular auditing</li>
+              <li>Site-to-site and remote access VPN setup</li>
+              <li>Network monitoring (PRTG, Zabbix, Nagios)</li>
+              <li>Wireless access point deployment and tuning</li>
+              <li>Full network documentation and topology diagrams</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="full-svc">
+          <div class="full-svc-head">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div><h3>IT Security & Incident Response</h3><p>Assess, harden, and respond — keeping your infrastructure secure and compliant</p></div>
+          </div>
+          <div class="full-svc-body">
+            <ul class="feat-list">
+              <li>Server and network security assessments</li>
+              <li>Malware investigation and remediation</li>
+              <li>Log monitoring and anomaly detection</li>
+              <li>Firewall and access control hardening</li>
+              <li>User privilege and account auditing</li>
+              <li>Security policy and procedure documentation</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="container">
+      <div class="cta-inner">
+        <div>
+          <h2>Need a Custom Quote?</h2>
+          <p>Describe your project and we'll scope it and price it in kina — no hidden fees.</p>
+        </div>
+        <a href="#" class="btn-white" onclick="navigate('contact'); return false;">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page-services -->
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE: MEDIA
+═══════════════════════════════════════════════ -->
+<div class="page" id="page-media">
+
+  <div class="page-hero">
+    <div class="page-hero-grid"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="breadcrumb">
+        <a href="#" onclick="navigate('home'); return false;">Home</a>
+        <span>›</span>
+        <span>Media</span>
+      </div>
+      <div class="sec-label">// Media Centre</div>
+      <h1>News, Gallery & Video</h1>
+      <p>The latest from Delien — project launches, tech tips, and company news.</p>
+    </div>
+  </div>
+
+  <section style="background: var(--white);">
+    <div class="container">
+
+      <div class="media-tabs">
+        <button class="mtab active" onclick="openTab('news',    this)">Latest News</button>
+        <button class="mtab"        onclick="openTab('gallery', this)">Gallery</button>
+        <button class="mtab"        onclick="openTab('video',   this)">Videos</button>
+        <button class="mtab"        onclick="openTab('press',   this)">Press Releases</button>
+      </div>
+
+      <!-- NEWS -->
+      <div class="mpanel active" id="panel-news">
+        <div class="news-grid">
+
+          <div class="news-card">
+            <div class="news-img-wrap">
+              <!-- Place your image at images/news-vm-deploy.jpg -->
+              <img class="news-img" src="images/news-vm-deploy.jpg" alt="VM deployment project" onerror="this.style.background='#1c2333';this.style.height='190px'">
+            </div>
+            <div class="news-body">
+              <div class="news-date">// 10 JUN 2026</div>
+              <h3>Delien Completes 50-Node VM Deployment for Port Moresby Client</h3>
+              <p>A fully segmented KVM environment with four VLANs and automated IPAM — delivered in under three weeks.</p>
+              <a href="#" class="rmore" onclick="return false;">Read More →</a>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-img-wrap">
+              <img class="news-img" src="images/news-ipam.jpg" alt="IPAM article" onerror="this.style.background='#1c2333';this.style.height='190px'">
+            </div>
+            <div class="news-body">
+              <div class="news-date">// 25 MAY 2026</div>
+              <h3>Why Every PNG Business Needs Proper IP Address Management</h3>
+              <p>Most small networks in PNG run on undocumented IP schemes. Here's what that costs you — and how IPAM fixes it.</p>
+              <a href="#" class="rmore" onclick="return false;">Read More →</a>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-img-wrap">
+              <img class="news-img" src="images/news-websites.jpg" alt="Website packages" onerror="this.style.background='#1c2333';this.style.height='190px'">
+            </div>
+            <div class="news-body">
+              <div class="news-date">// 08 MAY 2026</div>
+              <h3>Delien Launches Website Packages for PNG SMEs Starting at K1,500</h3>
+              <p>Professionally built websites with Cloudflare CDN, SSL, and 12 months of included maintenance.</p>
+              <a href="#" class="rmore" onclick="return false;">Read More →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- GALLERY -->
+      <div class="mpanel" id="panel-gallery">
+        <!-- Add your own images to the /images/ folder and update the src paths below -->
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/gallery-server-room.jpg"   alt="Server Room"         loading="lazy" onerror="this.parentElement.style.background='#1c2333'">
+            <div class="gallery-cap">Server Room Setup</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-network-rack.jpg"  alt="Network Rack"        loading="lazy" onerror="this.parentElement.style.background='#1c2333'">
+            <div class="gallery-cap">Network Rack Installation</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-team-office.jpg"   alt="Team at work"        loading="lazy" onerror="this.parentElement.style.background='#1c2333'">
+            <div class="gallery-cap">Team at Work</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-cabling.jpg"       alt="Structured cabling"  loading="lazy" onerror="this.parentElement.style.background='#1c2333'">
+            <div class="gallery-cap">Structured Cabling Project</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-monitoring.jpg"    alt="NOC monitoring"      loading="lazy" onerror="this.parentElement.style.background='#1c2333'">
+            <div class="gallery-cap">Network Operations Centre</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-site-visit.jpg"    alt="On-site visit"       loading="lazy" onerror="this.parentElement.style.background='#1c2333'">
+            <div class="gallery-cap">On-site Client Visit</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEOS -->
+      <div class="mpanel" id="panel-video">
+        <!-- Add your own videos to the /videos/ folder and update the src paths below -->
+        <div class="video-grid">
+
+          <div class="video-card">
+            <div class="video-thumb">
+              <img src="images/video-thumb-overview.jpg" alt="Company overview" onerror="this.style.background='#1c2333'">
+              <div class="play-btn">
+                <div class="play-circle">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>Delien Technologies — Company Overview</h3>
+              <p>2026 · 4:22 &nbsp;|&nbsp; <a href="videos/company-overview.mp4" target="_blank" style="color:var(--orange); font-size:12px;">Watch Video</a></p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">
+              <img src="images/video-thumb-vm.jpg" alt="VM subnetting tutorial" onerror="this.style.background='#1c2333'">
+              <div class="play-btn">
+                <div class="play-circle">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>VM Subnetting Walkthrough</h3>
+              <p>2026 · 6:15 &nbsp;|&nbsp; <a href="videos/vm-subnetting.mp4" target="_blank" style="color:var(--orange); font-size:12px;">Watch Video</a></p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">
+              <img src="images/video-thumb-network.jpg" alt="Network admin tutorial" onerror="this.style.background='#1c2333'">
+              <div class="play-btn">
+                <div class="play-circle">
+                  <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>Cisco Network Administration in PNG</h3>
+              <p>2026 · 5:30 &nbsp;|&nbsp; <a href="videos/cisco-network-admin.mp4" target="_blank" style="color:var(--orange); font-size:12px;">Watch Video</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PRESS RELEASES -->
+      <div class="mpanel" id="panel-press">
+        <div class="press-list">
+
+          <div class="press-item">
+            <div class="press-date"><div class="pday">10</div><div class="pmon">Jun</div><div class="pyr">2026</div></div>
+            <div class="press-content">
+              <h3>Delien Technologies Completes Major VM Infrastructure Project</h3>
+              <p>A 50-node virtual machine deployment for a Port Moresby-based financial organisation, including full subnet design, VLAN segmentation, and IPAM integration.</p>
+            </div>
+          </div>
+
+          <div class="press-item">
+            <div class="press-date"><div class="pday">08</div><div class="pmon">May</div><div class="pyr">2026</div></div>
+            <div class="press-content">
+              <h3>Delien Launches Affordable Website Package for PNG Small Business</h3>
+              <p>Fixed-price service includes custom design, Cloudflare setup, SSL, hosting configuration, and 12 months maintenance — priced for the local market.</p>
+            </div>
+          </div>
+
+          <div class="press-item">
+            <div class="press-date"><div class="pday">14</div><div class="pmon">Feb</div><div class="pyr">2026</div></div>
+            <div class="press-content">
+              <h3>Delien Expands Team with Two Certified Network Engineers</h3>
+              <p>Two new CCNA-certified engineers join, strengthening capacity for Cisco network design and administration services across NCD.</p>
+            </div>
+          </div>
+
+          <div class="press-item">
+            <div class="press-date"><div class="pday">03</div><div class="pmon">Jan</div><div class="pyr">2026</div></div>
+            <div class="press-content">
+              <h3>Delien Technologies Marks Five Years of Operations in PNG</h3>
+              <p>The company marks half a decade delivering IT infrastructure services to businesses, broadcasters, and government organisations across Papua New Guinea.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div><!-- /page-media -->
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE: CONTACT
+═══════════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+
+  <div class="page-hero">
+    <div class="page-hero-grid"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="breadcrumb">
+        <a href="#" onclick="navigate('home'); return false;">Home</a>
+        <span>›</span>
+        <span>Contact</span>
+      </div>
+      <div class="sec-label">// Get in Touch</div>
+      <h1>Contact Us</h1>
+      <p>Tell us about your project or infrastructure challenge. We'll get back to you within one business day.</p>
+    </div>
+  </div>
+
+  <section style="background: var(--white);">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="sec-label">// Our Details</div>
+          <h2 class="sec-title">Reach Out</h2>
+          <div class="rule"></div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+67532100000" style="color: var(--orange); text-decoration: none;">(+675) 321 0000</a></p>
+              <p>WhatsApp: <a href="https://wa.me/67532100000" target="_blank" style="color: var(--orange); text-decoration: none;">(+675) 321 0000</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:hello@delien.com.pg" style="color: var(--orange); text-decoration: none;">hello@delien.com.pg</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <h4>Office</h4>
+              <p>Waigani Drive<br>National Capital District<br>Papua New Guinea</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Monday – Friday: 8:00am – 5:00pm<br>Saturday: 9:00am – 1:00pm<br>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+          <div class="sec-label">// Send a Message</div>
+          <h2 class="sec-title">Get a Quote</h2>
+          <div class="rule"></div>
+
+          <div class="form-success" id="form-success">
+            ✓ Message sent! We'll get back to you within one business day.
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com.pg" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="(+675) 7XX XXXX">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">— Select a service —</option>
+                <option>Virtual Machine & Subnetting</option>
+                <option>IP Address Management (IPAM)</option>
+                <option>Website Building & Hosting</option>
+                <option>Server Administration</option>
+                <option>Network Administration</option>
+                <option>IT Security & Hardening</option>
+                <option>Multiple / General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project, infrastructure, or what you need help with…" required></textarea>
+            </div>
+            <button type="submit" id="submit-btn" class="btn-primary" style="width: 100%; padding: 14px;">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-contact -->
+
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer>
+  <div class="ft-top">
+    <div class="container">
+      <div class="ft-grid">
+
+        <!-- Brand -->
+        <div class="ft-brand">
+          <div class="ft-logo">
+            <div class="ft-mark">
+              <svg viewBox="0 0 28 28" fill="none">
+                <rect x="3"  y="3"  width="9" height="9" rx="1.5" stroke="#e8630a" stroke-width="1.8"/>
+                <rect x="16" y="3"  width="9" height="9" rx="1.5" stroke="#ff8534" stroke-width="1.8"/>
+                <rect x="3"  y="16" width="9" height="9" rx="1.5" stroke="#ff8534" stroke-width="1.8"/>
+                <rect x="16" y="16" width="9" height="9" rx="1.5" stroke="#e8630a" stroke-width="1.8"/>
+                <line x1="12" y1="7.5"  x2="16" y2="7.5"  stroke="#fff" stroke-width="1.5"/>
+                <line x1="12" y1="20.5" x2="16" y2="20.5" stroke="#fff" stroke-width="1.5"/>
+                <line x1="7.5"  y1="12" x2="7.5"  y2="16" stroke="#fff" stroke-width="1.5"/>
+                <line x1="20.5" y1="12" x2="20.5" y2="16" stroke="#fff" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <div class="ft-name">Delien Technologies</div>
+              <span class="ft-sub">// Papua New Guinea</span>
+            </div>
+          </div>
+          <p>Specialist IT infrastructure services — virtual machines, subnetting, IPAM, server and network administration, and website development for businesses across PNG.</p>
+          <div class="ft-contacts">
+            <div class="ft-c"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>(+675) 321 0000</div>
+            <div class="ft-c"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hello@delien.com.pg</div>
+            <div class="ft-c"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Waigani Drive, NCD, Papua New Guinea</div>
+          </div>
+          <div class="ft-socials">
+            <a class="soc" href="https://linkedin.com/company/delien-technologies" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="soc" href="https://wa.me/67532100000" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.11 1.523 5.836L.057 23.215a.75.75 0 00.92.92l5.379-1.466A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.944 9.944 0 01-5.073-1.388l-.361-.215-3.735 1.018 1.018-3.735-.215-.361A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            </a>
+            <a class="soc" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="ft-col">
+          <h4>Quick Links</h4>
+          <ul class="ft-links">
+            <li><a href="#" onclick="navigate('home');     return false;">Home</a></li>
+            <li><a href="#" onclick="navigate('about');    return false;">About Us</a></li>
+            <li><a href="#" onclick="navigate('services'); return false;">Services</a></li>
+            <li><a href="#" onclick="navigate('media');    return false;">Media</a></li>
+            <li><a href="#" onclick="navigate('contact');  return false;">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="ft-col">
+          <h4>Services</h4>
+          <ul class="ft-links">
+            <li><a href="#" onclick="navigate('services'); return false;">VM & Subnetting</a></li>
+            <li><a href="#" onclick="navigate('services'); return false;">IP Management</a></li>
+            <li><a href="#" onclick="navigate('services'); return false;">Website Building</a></li>
+            <li><a href="#" onclick="navigate('services'); return false;">Server Admin</a></li>
+            <li><a href="#" onclick="navigate('services'); return false;">Network Admin</a></li>
+            <li><a href="#" onclick="navigate('services'); return false;">IT Security</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="ft-col">
+          <h4>Contact</h4>
+          <ul class="ft-links">
+            <li><a href="mailto:hello@delien.com.pg">Email Us</a></li>
+            <li><a href="tel:+67532100000">(+675) 321 0000</a></li>
+            <li><a href="https://wa.me/67532100000" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="#" onclick="navigate('media'); return false;">News & Media</a></li>
+            <li><a href="#" onclick="return false;">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="ft-bottom">
+    <div class="container">
+      <div class="ft-bottom-inner">
+        <p>// &copy; 2026 Delien Technologies (PNG) Limited. All rights reserved.</p>
+        <div class="ft-btm-links">
+          <a href="#" onclick="return false;">Privacy Policy</a>
+          <a href="#" onclick="return false;">Terms of Use</a>
+          <a href="#" onclick="return false;">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
